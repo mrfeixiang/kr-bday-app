@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 8살 생일 축하해! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="birthday-header">
+            <h1 class="birthday-title">🎂 8살 생일 축하해! 🎂</h1>
+            <div class="balloons">
+                <div class="balloon balloon-1">🎈</div>
+                <div class="balloon balloon-2">🎈</div>
+                <div class="balloon balloon-3">🎈</div>
+            </div>
+        </header>
+
+        <main class="birthday-content">
+            <div class="birthday-card">
+                <h2>🌟 특별한 생일 공주님! 🌟</h2>
+                <p>오늘은 너의 멋진 날이야!</p>
+                <button id="surpriseBtn" class="surprise-btn">깜짝 선물을 위해 클릭해! ✨</button>
+            </div>
+
+            <div class="games-section">
+                <h3>🎮 생일 게임 🎮</h3>
+                
+                <div class="game balloon-pop">
+                    <h4>🎈 풍선 터뜨리기!</h4>
+                    <div class="balloon-game">
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                        <div class="game-balloon" onclick="popBalloon(this)">🎈</div>
+                    </div>
+                    <p class="score">터뜨린 풍선: <span id="balloonScore">0</span>개</p>
+                    <button onclick="resetBalloons()" class="reset-btn">게임 다시하기</button>
+                </div>
+
+                <div class="game cake-candles">
+                    <h4>🕯️ 촛불 끄기!</h4>
+                    <div class="cake">
+                        <div class="cake-base">🎂</div>
+                        <div class="candles">
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                            <span class="candle" onclick="blowCandle(this)">🕯️</span>
+                        </div>
+                    </div>
+                    <p class="candle-message" id="candleMessage">촛불을 클릭해서 불어서 꺼보세요!</p>
+                    <button onclick="resetCandles()" class="reset-btn">촛불 다시 켜기</button>
+                </div>
+            </div>
+
+            <div class="wishes-section">
+                <h3>💝 생일 축하 메시지 💝</h3>
+                <div class="wish-cards">
+                    <div class="wish-card">🌈 너의 하루가 무지개처럼 아름답기를!</div>
+                    <div class="wish-card">🦄 모든 꿈이 이루어지기를!</div>
+                    <div class="wish-card">🌟 너는 빛나는 별이야!</div>
+                    <div class="wish-card">🎨 계속 창의적이고 멋진 아이로 자라나길!</div>
+                </div>
+            </div>
+        </main>
+
+        <div class="confetti" id="confetti"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
